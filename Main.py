@@ -1,6 +1,7 @@
 import os
 import TempConversion as tc;
 import DatePrint as dp;
+import University as univ;
 # # print("Hello world")
 # test1 = 1
 # test2 = 1.1
@@ -44,13 +45,15 @@ def featureSelect(choice):
             print("Enter your birthdate")
             date = input("Enter your birthdate in format DD/MM/YYYY : \n")
             dp.calculateDate(date)
+        case "3":
+            univ.addUniversityData()
         case _:
             print("Invalid choice")
             exit()
 
 # print(chr(27) + "[2J") 
 os.system('cls')
-InputChoice = input("Select what you want to do : \n1. Temperature Conversion\n2. Date Calculation\n")
+InputChoice = input("Select what you want to do : \n1. Temperature Conversion\n2. Date Calculation\n3. Input University Data\n")
 featureSelect(InputChoice)
 
 # #  v Temperature Conversion
